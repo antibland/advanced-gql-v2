@@ -8,8 +8,78 @@
       "avatar": "http",
       "createdAt": 1571213104370,
       "id": "Z2hlvDmLOSRZGebC_Z_aA"
+    },
+    {
+      "email": "some@email.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1658779637886,
+      "id": "7jRhuHcvfzHyi2EUZ5k6v"
+    },
+    {
+      "email": "member@email.com",
+      "password": "password",
+      "role": "MEMBER",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1658780241563,
+      "id": "Uj3qGX-8wd0KaRmp-ZJuk"
+    },
+    {
+      "email": "member2@email.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1658797462436,
+      "id": "FKHTojZJCY9GaGcE0AkTE"
+    },
+    {
+      "email": "member3@email.com",
+      "password": "password",
+      "role": "MEMBER",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1658868539026,
+      "id": "5Tj-QEuyETVN1KLRn--MP"
+    },
+    {
+      "email": "admin1@email.com",
+      "password": "password",
+      "role": "ADMIN",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1658891594947,
+      "id": "WLhEjQEdVMkqd6Mlod1Tk"
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "message": "This is a new post",
+      "author": "FKHTojZJCY9GaGcE0AkTE",
+      "createdAt": 1658891439520,
+      "id": "We3Z_XRohUz8GhJjaPUWY"
+    },
+    {
+      "message": "This is a new post",
+      "author": "7jRhuHcvfzHyi2EUZ5k6v",
+      "createdAt": 1658891553955,
+      "id": "TwJZFcFXufKaNPR-TGA_I"
+    },
+    {
+      "message": "This is a new post, k?",
+      "author": "WLhEjQEdVMkqd6Mlod1Tk",
+      "createdAt": 1658891654928,
+      "id": "UdTSwtQU1_EcO3ac4SE2n"
+    },
+    {
+      "message": "This is another new post, k?",
+      "author": "WLhEjQEdVMkqd6Mlod1Tk",
+      "createdAt": 1658891662066,
+      "id": "IC9Mj3BXEMAi0yPVMi0je"
+    }
+  ],
   "settings": []
 }
