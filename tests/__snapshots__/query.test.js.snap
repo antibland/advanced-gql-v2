@@ -22,3 +22,18 @@ Object {
   },
 }
 `;
+
+exports[`queries me 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: not authenticated],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

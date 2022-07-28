@@ -1,12 +1,22 @@
-const { ApolloServer } = require("apollo-server");
+const { ApolloServer, AuthenticationError } = require("apollo-server");
 const typeDefs = require("./typedefs");
 const resolvers = require("./resolvers");
 const { createToken, getUserFromToken } = require("./auth");
+const {
+  FormattedDateDirective,
+  AuthenticationDirective,
+  AuthorizationDirective,
+} = require("./directives");
 const db = require("./db");
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  schemaDirectives: {
+    formattedDate: FormattedDateDirective,
+    authenticated: AuthenticationDirective,
+    authorized: AuthorizationDirective,
+  },
   context({ req, connection }) {
     const context = { ...db };
     if (connection) {
@@ -20,7 +30,7 @@ const server = new ApolloServer({
     onConnect(params) {
       const token = params.Authorization;
       const user = getUserFromToken(token);
-      if (!user) throw new Error("nope");
+      if (!user) throw new AuthenticationError("user is invalid");
       return { user };
     },
   },
